@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded',function(){
 			method:"POST",
 			body:JSON.stringify([data])
 		}).then(function(data){
+
 			fetch('https://sms-test.bayadcenter.net/sms/push',{
 				method:"POST",
 				body:data2,
@@ -30,11 +31,12 @@ document.addEventListener('DOMContentLoaded',function(){
 		  		}
 			}).then(function(data){
 				if (data['status'] === 200) {
-					console.log('Successfully Sent.');
+					M.toast({html: 'Confirmation Code Successfully Sent.'})
 				}else{
-					console.log('Error');
+					M.toast({html: 'Confirmation Code Not Sent.'})
 				}
 			});
+			
 		});
 	});
 });
