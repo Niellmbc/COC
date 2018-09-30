@@ -70,24 +70,42 @@
 				<form id="login_user">
 					<div class="card-content center">
 						<img src="./img/logos/columbanlogo.png" alt="logo" class="circle md-logo">
-						<h5 class="title-login gradient-text">CLASH OF CODES</h5>
-						<h6 class="subtitle">POWERED BY: <span class="gradient-text-2">MULTISYS</span></h6>
+						<h5 class="title-login gradient-text">REGISTER</h5>
 						<div class="line-breaks"></div>
 						<div class="line-breaks"></div>
 						<div class="input-field container">
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
+								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="First Name" autofocus required>
+							</div>
+							<div class="input-container">
+								<h5><i class="la la-user icon"></i></h5>
+								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="Last Name" autofocus required>
+							</div>
+							<div class="input-container">
+								<h5><i class="la la-user icon"></i></h5>
 								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="Username" autofocus required>
+							</div>
+							<div class="input-container">
+								<h5><i class="la la-user icon"></i></h5>
+						         <input id="phone-number" class="form-control validate" type="tel" required title="Please enter a valid phone number (e.g., (123) 456-7890)" pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate" placeholder="Phone Number">
+							</div>
+							<div class="input-container">
+								<h5><i class="la la-user icon"></i></h5>
+						        <input id="email" type="email" class="form-control validate" required class="validate" title="Please enter a valid email" placeholder="Email">
 							</div>
 							<div class="input-container mt-br">
 								<h5><i class="la la-unlock-alt icon"></i></h5>
 								<input type="password" class="form-control validate" id="user_password" name="user_password" placeholder="Password" required>
 							</div>
+							<div class="input-container mt-br">
+								<h5><i class="la la-unlock-alt icon"></i></h5>
+								<input type="password" class="form-control validate" id="user_password" name="user_password" placeholder="Confirm Password" required>
+							</div>
 						</div>
 						<br>
 						<button id="submit_login" class="btn button gradient-button">SIGN IN</button>
-						<br><br>
-						<h6 class="subtitle text-size">Don't have an account? <br><a href="./register.html"><span class="gradient-text">Sign up here.</span></a></h6>
+						<h6 class="subtitle text-size"><a href="./index.html"><span class="gradient-text">Go Back</span></a></h6>
 					</div>
 				</form>
 			</div>
