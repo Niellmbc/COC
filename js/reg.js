@@ -1,4 +1,3 @@
-let url = 'http://gordoncollegeccs-ssite.net/macionmart/coc/pracapi'
 function x(val){
 	return document.querySelector(val);
 }
@@ -31,12 +30,14 @@ document.addEventListener('DOMContentLoaded',function(){
 		  		}
 			}).then(function(data){
 				if (data['status'] === 200) {
-					M.toast({html: 'Confirmation Code Successfully Sent.'})
+					M.toast({html: 'Confirmation Successfully Sent',completeCallback: function(){
+						window.location.assign('index.html');
+					}});
 				}else{
-					M.toast({html: 'Confirmation Code Not Sent.'})
+					M.toast({html: 'Confirmation Code Not Sent Please try again in a moment.'});
 				}
 			});
-			
+
 		});
 	});
 });
