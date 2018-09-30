@@ -7,7 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./css/materialize.min.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<title>CoC</title>
+	<link rel="stylesheet" href="./css/line-awesome.min.css">
+	<link rel="stylesheet" href="./css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
+	<title>Team CoffeeDev | Clash of Codes</title>
 </head>
 <style media="screen">
 .card-image {
@@ -66,10 +69,10 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col l9 offset-l1 mt-1">
+			<div class="col-l9 offset-l1 mt-1">
 				<form id="login_user">
 					<div class="card-content center">
-						<img src="./img/logos/columbanlogo.png" alt="logo" class="circle md-logo">
+						<img src=".\img\logos\student.png" class="circle md-logo">
 						<h5 class="title-login gradient-text">CLASH OF CODES</h5>
 						<h6 class="subtitle">POWERED BY: <span class="gradient-text-2">MULTISYS</span></h6>
 						<div class="line-breaks"></div>
@@ -77,7 +80,7 @@
 						<div class="input-field container">
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
-								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="Username" autofocus required>
+								<input type="text" class="form-control validate" id="user_username" pattern="^\S.{1,23}\S$" title="Please enter your account email" name="user_username" placeholder="Username" autofocus required>
 							</div>
 							<div class="input-container mt-br">
 								<h5><i class="la la-unlock-alt icon"></i></h5>
