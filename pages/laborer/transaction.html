@@ -20,13 +20,15 @@
 </style>
 <body>
 	<header>
-		<nav>
-			<div class="nav-wrapper white">
-				<ul>
-					<li><a href="#!" class="color-black waves-effect sidenav-trigger show-on-large" data-target="slide-out">&#9776;</a></li>
-				</ul>
-			</div>
-		</nav>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper white">
+					<ul>
+						<li><a href="#!" class="color-black waves-effect sidenav-trigger show-on-large" data-target="slide-out">&#9776;</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<ul id="slide-out" class="sidenav sidenav-fixed">
 			<li class="z-depth-1 white center" style="height: 64px;"><span class=" font-md gradient-text">Clash of Codes</span></li>
 			<li>
@@ -41,8 +43,8 @@
 			</li>
 			<div id="sidenav-activator">
 				<li><a class="subheader">My Task</a></li>
-				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Dashboard</a></li>
-				<li class="sidenav-list"><a href="./transaction.html" class="waves-effect"><i class="la la-money"></i>Transaction Logs</a></li>
+				<li class="sidenav-list"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Dashboard</a></li>
+				<li class="sidenav-list active-sidenav"><a href="./transaction.html" class="waves-effect"><i class="la la-money"></i>Transaction Logs</a></li>
 				<li><a class="subheader">User Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-sliders"></i>Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-power-off"></i>Logout</a></li>
@@ -53,25 +55,22 @@
 		<div class="container panel-container">
 			<div class="row mt-br">
 				<div class="col l6">
-					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">dashboard</h5>
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">transaction</h5>
 					<p class="color-grey"> - Here's a Summary of your Order</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col l5">
-					<div class="card hoverable">
-						<div class="card-content center-align">
-							<h6 class="color-grey letter-space" style="font-size: 70px;">.</h6>
-							<h5 style="font-size:40px"><i class="la la-shopping-cart color-grey"></i></h5>
-							<h6 class="color-grey letter-space" style="font-size: 20px;">total ordered</h6>
+				<ul class="tabs tabs-fixed-width tab-demo" style="background-color: transparent;">
+					<li class="tab"><a class="active" href="#pending_tab">Pending Transaction</a></li>
+					<li class="tab"><a href="#">Done Transaction</a></li>
+				</ul>
+				<div id="pending_tab" class="col s12">
+					<div class="col s12" style="padding:0">
+						<div class="card mt-br">
+							<div class="card-content">
+								<span class="card-title green-text">Siling Labuyo</span>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col l7">
-					<div class="col l12">
-						<table class="table responsive-table centered">
-							<tbody class="letter-space"></tbody>
-						</table>
 					</div>
 				</div>
 			</div>

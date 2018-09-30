@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../css/materialize.min.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/line-awesome.min.css">
+	<link rel="stylesheet" href="../../css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/animate.min.css">
+	<title>Columban Student Assistant Admin Panel</title>
+</head>
+<style>
+.badge-small {
+	padding: 6px 10px;
+	border-radius: 30px;
+}
+</style>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper white">
+				<ul class="left hide-on-med-and-down">
+					<li><a href="#!" class="color-black waves-effect">&nbsp;&#9776;&nbsp;</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="slide-out" class="sidenav sidenav-fixed">
+			<li class="z-depth-1 white center" style="height: 64px;"><span class=" font-md gradient-text">Columban College</span></li>
+			<li>
+				<div class="user-view">
+					<div class="background bg-d-blue">
+						<img src="../../img/logos/columbanlogo.png" class="responsive-img" style="opacity: 0.1;margin-top:-55px;">
+					</div>
+					<a href="#user"><img class="circle" src="../../img/logos/professor.png" id="user_avatar"></a>
+					<a href="#name"><span class="white-text name capitalize" id="user_fullname"><b></b></span></a>
+					<a href="#email"><span class="white-text email capitalize" id="user_dept"></span></a>
+				</div>
+			</li>
+			<div id="sidenav-activator">
+				<li><a class="subheader">My Task</a></li>
+				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Dashboard</a></li>
+				<li class="sidenav-list"><a href="./events.html" class="waves-effect"><i class="la la-calendar"></i>Events</a></li>
+				<li class="sidenav-list"><a href="./student-logs.html" id="" class="waves-effect"><i class="la la-graduation-cap"></i>Student Logs</a></li>
+				<li class="sidenav-list"><a href="./student-record.html" class="waves-effect"><i class="la la-users"></i>Student Record</a></li>
+				<li><a class="subheader">User Profile</a></li>
+				<li class="sidenav-list"><a class="waves-effect"><i class="la la-sliders"></i>Profile</a></li>
+				<li class="sidenav-list"><a onclick="logout()" class="waves-effect"><i class="la la-power-off"></i>Logout</a></li>
+			</div>
+		</ul>
+	</header>
+	<main class="mt-br">
+		<div class="container panel-container">
+			<div class="row mt-br">
+				<div class="col l6">
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">dashboard</h5>
+					<p class="color-grey"> - Here's a Summary of Student-Assistant and Upcoming Events</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l5">
+					<div class="card hoverable">
+						<div class="card-content center-align">
+							<h6 class="color-grey letter-space" style="font-size: 70px;" id="total_SA">.</h6>
+							<h5 style="font-size:40px"><i class="la la-graduation-cap color-grey"></i></h5>
+							<h6 class="color-grey letter-space" style="font-size: 20px;">Official SA's</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col l7">
+					<div class="col l12">
+						<table class="table responsive-table centered">
+							<tbody class="letter-space"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>	
+	<script src="../../js/materialize.min.js"></script>
+</body>
+</html>
