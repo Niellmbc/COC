@@ -41,8 +41,7 @@
 			</li>
 			<div id="sidenav-activator">
 				<li><a class="subheader">My Task</a></li>
-				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Dashboard</a></li>
-				<li class="sidenav-list"><a href="./transaction.html" class="waves-effect"><i class="la la-money"></i>Pending Commands</a></li>
+				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Commads</a></li>
 				<li><a class="subheader">User Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-sliders"></i>Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-power-off"></i>Logout</a></li>
@@ -53,27 +52,58 @@
 		<div class="container panel-container">
 			<div class="row mt-br">
 				<div class="col l6">
-					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">dashboard</h5>
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Commands</h5>
 					<p class="color-grey"> - Here's a Summary of your Order</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col l5">
-					<div class="card hoverable">
-						<div class="card-content center-align">
-							<h6 class="color-grey letter-space" style="font-size: 70px;">.</h6>
-							<h5 style="font-size:40px"><i class="la la-shopping-cart color-grey"></i></h5>
-							<h6 class="color-grey letter-space" style="font-size: 20px;">total ordered</h6>
-						</div>
+
+			</div>
+
+		</div>
+		<div class="fixed-action-btn"><a class="btn-floating btn-large green waves-effect modal-trigger" href="#checklist"><i class="large la la-plus"></i></a></div>
+		<div id="checklist" class="modal modal-fixed-footer">
+			<div class="modal-content">
+				<h5 class="green-text">Add Check List</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+				<div class="row">
+					<div class="input-field col s12">
+						<select id="" name="" class="browser-default" required>
+							<option  disabled selected>Choose your laborer</option>
+						</select>
 					</div>
-				</div>
-				<div class="col l7">
-					<div class="col l12">
-						<table class="table responsive-table centered">
-							<tbody class="letter-space"></tbody>
+					<div class="input-field col s12 l8 mt-br">
+						<i class="la la-shopping-cart prefix"></i>
+						<input id="product_name" name="" type="text" value="" class="validate" required autofocus>
+						<label for="product_name">Product Name:</label>
+						<span class="helper-text" data-error="Fields are required" data-success=""></span>
+					</div>
+					<div class="input-field col s12 l4 mt-br">
+						<i class="la la-sort-numeric-asc prefix"></i>
+						<input id="product_qty" name="" type="number" value="" class="validate" required autofocus>
+						<label for="product_qty">Quantity:</label>
+						<span class="helper-text" data-error="Fields are required" data-success=""></span>
+					</div>
+					<div class="col s12">
+						<table class="responsive-table centered">
+							<thead>
+								<tr>
+									<th>Product Name</th>
+									<th>Quantity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="2">No Product Added</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
+				<a href="#!" class="waves-effect btn">Submit</a>
 			</div>
 		</div>
 	</main>	
