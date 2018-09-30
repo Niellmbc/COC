@@ -44,7 +44,7 @@
 			<div id="sidenav-activator">
 				<li><a class="subheader">My Task</a></li>
 				<li class="sidenav-list"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Dashboard</a></li>
-				<li class="sidenav-list active-sidenav"><a href="./transaction.html" class="waves-effect"><i class="la la-money"></i>Transaction Logs</a></li>
+				<li class="sidenav-list active-sidenav"><a href="./transaction.html" class="waves-effect"><i class="la la-money"></i>Pending Commands</a></li>
 				<li><a class="subheader">User Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-sliders"></i>Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-power-off"></i>Logout</a></li>
@@ -55,24 +55,78 @@
 		<div class="container panel-container">
 			<div class="row mt-br">
 				<div class="col l6">
-					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">transaction</h5>
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Pending Commands</h5>
 					<p class="color-grey"> - Here's a Summary of your Order</p>
 				</div>
 			</div>
 			<div class="row">
-				<ul class="tabs tabs-fixed-width tab-demo" style="background-color: transparent;">
-					<li class="tab"><a class="active" href="#pending_tab">Pending Transaction</a></li>
-					<li class="tab"><a href="#">Done Transaction</a></li>
-				</ul>
-				<div id="pending_tab" class="col s12">
-					<div class="col s12" style="padding:0">
-						<div class="card mt-br">
-							<div class="card-content">
-								<span class="card-title green-text">Siling Labuyo</span>
+				<div class="col s12 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s6">
+								<img src="../../img/logos/student.jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10">
+								<h5 class="green-text">Dave Doe</h5>
+								<span class="black-text">
+									<ul style="color:#000000a6">
+										<li>2 - Sili</li>
+										<li>2 - Kangkong</li>
+									</ul>
+								</span>
+								<a href="#checklist" class="btn waves-effect modal-trigger">View info</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="col s12 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="row valign-wrapper">
+							<div class="col s6">
+								<img src="../../img/logos/student.jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10">
+								<h5 class="green-text">Dave Doe</h5>
+								<span class="black-text">
+									<ul style="color:#000000a6">
+										<li>2 - Sili</li>
+										<li>2 - Kangkong</li>
+									</ul>
+								</span>
+								<a href="#checklist" class="btn waves-effect modal-trigger">View info</a>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id="checklist" class="modal">
+			<div class="modal-content">
+				<h5 class="green-text">Check List</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in" />
+								<span>Sili</span>
+							</label>
+						</p>
+					</div>	
+					<div class="col s12">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in" />
+								<span>Kangkong</span>
+							</label>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
+				<a href="#!" class="waves-effect btn">Submit</a>
 			</div>
 		</div>
 	</main>	
