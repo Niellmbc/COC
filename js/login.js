@@ -10,11 +10,12 @@ document.addEventListener('DOMContentLoaded',function(){
 		e.preventDefault();
 		fetch(url+"/tbl_users/fldUsername/"+datas.fldUsername).then((res)=>res.json()).then(function(data){
 			if(data[0].fldUsername === datas.fldUsername && data[0].fldPassword === datas.fldPassword){
-					if(data[0].fldConfirmation){
+					if(data[0].fldConfirmation != null){
 						M.toast({html: 'Please Confirm Your Account',completeCallback: function(){
 							window.location.assign('confirm.html');
 						}});
 					}else{
+						window.location.assign('confirm.html');
 						M.toast({html: 'Welcome'});
 					}
 			}else{
