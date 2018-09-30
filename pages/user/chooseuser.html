@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../../css/line-awesome.min.css">
 	<link rel="stylesheet" href="../../css/line-awesome-font-awesome.min.css">
 	<link rel="stylesheet" href="../../css/animate.min.css">
-	<title>Team CoffeeDev | Clash of Codes</title>
+	<title>Clash of Codes</title>
 </head>
 <style>
 .badge-small {
@@ -55,28 +55,43 @@
 		<div class="container panel-container">
 			<div class="row mt-br">
 				<div class="col l6">
-					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Pending Commands</h5>
-					<p class="color-grey"> - Here's a Summary of your Order</p>
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Select your laborer</h5>
+					<p class="color-grey"> - Choose any user</p>
 				</div>
 			</div>
-			<div class="row" id="fetch_users"></div>
-		</div>
-		<div id="checklist" class="modal">
-			<div class="modal-content">
-				<h5 class="green-text">Check List</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<div class="row" id="fetch_checklistOrder"></div>
-			</div>
-			<div class="modal-footer">
-				<a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
-				<a href="#!" class="waves-effect btn">Submit</a>
+			<div class="row" id="userList">
+                
 			</div>
 		</div>
+        
+        
+    
+        
+        
+  <!-- Modal Trigger -->
+
+
+  <!-- Modal Structure -->
+  <div id="checklist" class="modal" style="width: 50%">
+    <div class="modal-content">
+      <h4>Are you sure?</h4>
+      <p>Please make sure you've read the policy</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-green" onclick="submitdata()">Yes</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">No</a>
+    </div>
+  </div>        
 	</main>	
 	<script src="../../js/materialize.min.js"></script>
 	<script src="../../js/jquery.min.js"></script>
 	<script src="../../js/init.js"></script>
-	<script src="./checklist.js"></script>
+        
+    <script src="../../js/func.js"></script>
+    
+    <script>
+    getUser();
+    getData();
+    </script>
 </body>
 </html>
