@@ -67,7 +67,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col l9 offset-l1 mt-1">
-				<form id="login_user">
+				<form id="reg_user">
 					<div class="card-content center">
 						<img src="./img/logos/columbanlogo.png" alt="logo" class="circle md-logo">
 						<h5 class="title-login gradient-text">REGISTER</h5>
@@ -76,11 +76,11 @@
 						<div class="input-field container">
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
-								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="First Name" autofocus required>
+								<input type="text" class="form-control validate" id="user_firstname" title="Please enter your account email" name="user_firstname" placeholder="First Name" autofocus required>
 							</div>
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
-								<input type="text" class="form-control validate" id="user_username" title="Please enter your account email" name="user_username" placeholder="Last Name" autofocus required>
+								<input type="text" class="form-control validate" id="user_lastname" title="Please enter your account email" name="user_lastname" placeholder="Last Name" autofocus required>
 							</div>
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
@@ -88,23 +88,23 @@
 							</div>
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
-						         <input id="phone-number" class="form-control validate" type="tel" required title="Please enter a valid phone number (e.g., (123) 456-7890)" pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate" placeholder="Phone Number">
+						         <input id="user_phone" class="form-control validate" type="tel" required title="Please enter a valid phone number (e.g., (123) 456-7890)" pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate" placeholder="Phone Number" name="user_phone">
 							</div>
 							<div class="input-container">
 								<h5><i class="la la-user icon"></i></h5>
-						        <input id="email" type="email" class="form-control validate" required class="validate" title="Please enter a valid email" placeholder="Email">
+						        <input id="user_email" type="email" class="form-control validate" required class="validate" title="Please enter a valid email" placeholder="Email" name="user_email">
 							</div>
 							<div class="input-container mt-br">
 								<h5><i class="la la-unlock-alt icon"></i></h5>
-								<input type="password" class="form-control validate" id="user_password" name="user_password" placeholder="Password" required>
+								<input type="password" class="form-control validate" id="user_password" name="c" placeholder="Password" required>
 							</div>
 							<div class="input-container mt-br">
 								<h5><i class="la la-unlock-alt icon"></i></h5>
-								<input type="password" class="form-control validate" id="user_password" name="user_password" placeholder="Confirm Password" required>
+								<input type="password" class="form-control validate" id="user_password_conf" name="user_password_conf" placeholder="Confirm Password" required>
 							</div>
 						</div>
 						<br>
-						<button id="submit_login" class="btn button gradient-button">SIGN IN</button>
+						<button id="submit" type="submit" class="btn button gradient-button">SIGN IN</button>
 						<h6 class="subtitle text-size"><a href="./index.html"><span class="gradient-text">Go Back</span></a></h6>
 					</div>
 				</form>
@@ -112,7 +112,7 @@
 		</div>
 	</div>
 	<script src="./js/jquery.min.js"></script>
-	<!-- <script src="./js/login.js"></script> -->
+	<script src="./js/reg.js"></script>
 	<script src="./js/materialize.min.js"></script>
 	<script src="./js/init.js"></script>
 	<!-- <script src="./js/checklogin.js"></script> -->
