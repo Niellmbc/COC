@@ -41,7 +41,7 @@
 			</li>
 			<div id="sidenav-activator">
 				<li><a class="subheader">My Task</a></li>
-				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Commads</a></li>
+				<li class="sidenav-list active-sidenav"><a href="./index.html" class="waves-effect"><i class="la la-area-chart"></i>Products</a></li>
 				<li><a class="subheader">User Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-sliders"></i>Profile</a></li>
 				<li class="sidenav-list"><a class="waves-effect"><i class="la la-power-off"></i>Logout</a></li>
@@ -52,10 +52,11 @@
 		<div class="container panel-container">
 			<div class="row mt-br">
 				<div class="col l6">
-					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Commands</h5>
-					<p class="color-grey"> - Here's a Summary of your Order</p>
+					<h5 style="font-weight: light;" class="gradient-text-strong letter-space">Order Now</h5>
+					<p class="color-grey"> - Here's a List of Products</p>
 				</div>
 			</div>
+<<<<<<< HEAD
 			<div class="row">
 			
 			</div>
@@ -98,9 +99,39 @@
 								</tr>
 							</tbody>
 						</table>
+=======
+			<div class="row" id="fetch_products"></div>
+			<div class="fixed-action-btn"><a class="btn-floating btn-large  waves-effect modal-trigger" href="#checklist"><i class="large la la-shopping-cart" onclick="checkCart()"></i></a></div>
+			<div id="checklist" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<h5 class="green-text">Add Check List</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur </p>
+					<div class="row">
+						<div class="col s12">
+							<table class="responsive-table centered">
+								<thead>
+									<tr>
+										<th>Product Name</th>
+										<th>Quantity</th>
+										<th>Total</th>
+									</tr>
+								</thead>
+								<tbody id="fetch_cart">
+									<tr>
+										<td colspan="2">No Product Added</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+>>>>>>> 9dc307d1752cb191419e0b1d89377138b1ddb1aa
 					</div>
 				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Back</a>
+					<a href="#!" class="waves-effect btn" onclick="submitCheckList(fetch_laborer.value)">Checkout</a>
+				</div>
 			</div>
+<<<<<<< HEAD
 			<div class="modal-footer">
 				<a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
 				<a href="#!" class="waves-effect btn">Submit</a>
@@ -113,3 +144,12 @@
 
 </body>
 </html>
+=======
+		</main>	
+		<script src="../../js/materialize.min.js"></script>
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/init.js"></script>
+		<script src="./command.js"></script>
+	</body>
+	</html>
+>>>>>>> 9dc307d1752cb191419e0b1d89377138b1ddb1aa

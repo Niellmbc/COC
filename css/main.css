@@ -5,8 +5,6 @@
     --white: #eff0f4;
     --black: #263238;
     --grey: #455a64;
-    --red:#e74c3c;
-    --dark-red:#c0392b;
 }
 
 html, body {
@@ -39,20 +37,10 @@ header, main, footer {
     -webkit-background-clip: text;
 }
 
-.gradient-text-2 {
-    background: -webkit-linear-gradient(left top, var(--red), var(--dark-red));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
 .gradient-text-strong {
     background: -webkit-linear-gradient(left top, var(--dark-blue), var(--light-blue));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
-
-.gradient-button {
-    background: -webkit-linear-gradient(left top, var(--light-blue), var(--dark-blue));
 }
 
 .bg-d-blue {
